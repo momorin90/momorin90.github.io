@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="src/assets/kpop.ico" type="image/x-icon" />
+    <link rel="icon" href="src/assets/kpop.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="og:site_name" content="Kpop Female Idols Sorting" />
+    <meta
+      name="og:description"
+      content="A simple website for sorting Kpop Female Idols in a formatted list."
+    />
+    <meta name="og:image" content="https://i.imgur.com/MGBCSyu.jpg" />
+    <title>Kpop Female Idols Sorter</title>
+
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+
+    <script src="src/js/data.js"></script>
+    <script src="src/js/data/2021-10-03.js"></script>
+
+    <script src="src/js/html2canvas.min.js"></script>
+    <script src="src/js/lz-string.min.js"></script>
+    <script src="src/js/seedrandom.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="progress">
+        <span class="progressbattle"></span>
+        <div class="progressbar">
+          <div class="progressfill"><span class="progresstext"></span></div>
+        </div>
+      </div>
+
+      <div class="sorter">
+        <img src="src/assets/defaultL.jpg" class="left sort image" />
+
+        <div class="starting start button">
+          Kpop Female Idols Sorter<br /><br />
+          <span class="bold">Click to Start!</span>
+        </div>
+        <div class="starting load button">Load <span></span></div>
+
+        <div class="loading button">
+          <div></div>
+          <span>Loading...</span>
+        </div>
+
+        <div class="sorting tie button">Tie</div>
+        <div class="sorting undo button">Undo</div>
+        <div class="sorting save button">Save Progress</div>
+
+        <div class="finished save button">Generate Result URL</div>
+        <div class="finished getimg button">Generate Image</div>
+        <div class="finished list button">Generate Text List</div>
+
+        <img src="src/assets/defaultR.jpg" class="right sort image" />
+
+        <div class="left sort text">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="right sort text">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="options"></div>
+      <!--<div class="image selector">Display Images on Result:</div>-->
+      <div class="time taken"></div>
+      <div class="results"></div>
+
+      <div class="info">
+        <a href="mailto:ad20171217@gmail.com">Suggest Idol</a> |
+        <a href="https://github.com/execfera/charasort/">Source Code</a> |
+        <a class="clearsave">Clear Save Data</a>
+
+        <br /><br />
+
+        <p>Bias sorter tool for Kpop Female Idols. By Momorin.</p>
+        <p>
+          Click on the idol you like better from the two, or tie them if you
+          like them equally or don't know them.
+        </p>
+        <p>
+          A screen resolution of at least 768px wide is required to display
+          results nicely.
+        </p>
+
+        <br /><br />
+
+        <p>Keyboard controls</p>
+        <p>
+          [Before sorting] Start Sorting: <kbd>S</kbd> /
+          <kbd>&#9166;</kbd> &mdash; Load Progress: <kbd>L</kbd>
+        </p>
+        <p>
+          [During sorting] Pick Left: <kbd>H</kbd> &mdash; Undo:
+          <kbd>J</kbd> &mdash; Tie: <kbd>K</kbd> &mdash; Pick Right:
+          <kbd>L</kbd> &mdash; Save Progress: <kbd>S</kbd>
+        </p>
+        <p>
+          <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> always correspond to the
+          first / second / third buttons in the middle.
+        </p>
+
+        <br /><br />
+
+        <p>October 3rd, 2021 - Sorter with 402 Idols, 70 Groups</p>
+      </div>
+    </div>
+  </body>
+</html>
