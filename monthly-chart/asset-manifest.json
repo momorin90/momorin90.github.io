@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monthly-chart/static/css/main.1f0c6930.css",
+    "main.js": "/monthly-chart/static/js/main.4edb15c7.js",
+    "static/js/787.be7b2d0a.chunk.js": "/monthly-chart/static/js/787.be7b2d0a.chunk.js",
+    "index.html": "/monthly-chart/index.html",
+    "main.1f0c6930.css.map": "/monthly-chart/static/css/main.1f0c6930.css.map",
+    "main.4edb15c7.js.map": "/monthly-chart/static/js/main.4edb15c7.js.map",
+    "787.be7b2d0a.chunk.js.map": "/monthly-chart/static/js/787.be7b2d0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f0c6930.css",
+    "static/js/main.4edb15c7.js"
+  ]
+}
