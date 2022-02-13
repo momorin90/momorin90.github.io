@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /*background-color: #fff;
+  min-height: 10vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.list-area {
+  max-width: 900px;
+  /*border: 1px solid black;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.month-picker {
+  display: inline-block;
+  color: #575757;
+  font-size: 1.3em;
+  cursor: pointer;
+  /*border: 1px solid blue;*/
+}
+
+.month-picker > .box {
+  padding: 5px 10px;
+}
+
+.month-picker > .box label {
+  cursor: pointer;
+}
+
+.month-picker > .rmp-container .rmp-popup {
+  width: 15rem !important;
+  font-size: 1.2rem !important;
+  left: -4.5rem !important;
+}
+
+.month-picker > .rmp-container .rmp-popup .rmp-pad {
+  width: 15rem !important;
+}
+
+.month-picker > .rmp-container .rmp-popup .rmp-pad > div label {
+  font-size: 1rem !important;
+}
+
+.month-picker > .rmp-container .rmp-popup .rmp-pad li {
+  line-height: 2.7rem !important;
+  font-size: 1rem !important;
+}
+
+.box-icon {
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+
+.tool-btns {
+  text-align: left;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.tool-btns button {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 16px;
+  border: 1px solid #b2b2b2;
+  background-color: white;
+  border-radius: 100px;
+  color: #575757;
+  font-size: 12px;
+  visibility: visible;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tool-icon {
+  color: #606060;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+.chart-table-area {
+  display: block;
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+.chart-table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.chart-table > thead > tr > th {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 10px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 15px;
+  color: #606060;
+}
+
+.chart-table > tbody > tr > td {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333;
+}
+
+.chart-table .pseudo-cell {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chart-table .title-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chart-table .title-cell img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.chart-table .text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chart-table .artist-cell {
+  color: #969696;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.chart-table .link-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chart-table .link-cell .link-icon {
+  color: #606060;
+  font-size: 22px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE MOBILE FIXES */
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
+  .chart-table > thead {
+    display: none;
+  }
+  .chart-table tr td:nth-child(3),
+  .chart-table tr td:nth-child(4) {
+    display: none;
+  }
+  .chart-table .pseudo-cell {
+    max-width: 60px;
+  }
+  .month-picker > .rmp-container {
+    position: relative !important;
+  }
+  .month-picker > .rmp-container .rmp-popup {
+    top: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+}
