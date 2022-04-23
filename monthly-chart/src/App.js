@@ -46,6 +46,7 @@ function App() {
   const [singleValue, setSingleValue] = useState(INIT_VALUE);
   const [activeMonths, setActiveMonths] = useState(INIT_ACTIVE_VALUES);
   const [selectionData, setSelectionData] = useState([]);
+  const [ageIncrement, setAgeIncrement] = useState(0);
 
   const _loadSelectionData = async (currentMonth) => {
     const tmpData = [];
@@ -142,12 +143,14 @@ function App() {
     const tmp = { ...activeMonths };
     tmp.max = lastMonth;
     setActiveMonths(tmp);
+    setAgeIncrement(ageIncrement + 1);
     // Initialize data
     _updateSelectionData(lastMonth);
   }
 
   useEffect(() => {
     initData();
+    // eslint-disable-next-line
   }, []);
 
   const pickerLang = {
@@ -178,8 +181,10 @@ function App() {
   };
 
   const handleAMonthChange = (value, text) => {
-    setSingleValue({ year: value, month: text });
+    const changedMonth = { year: value, month: text };
+    setSingleValue(changedMonth);
     // Load new data here
+    _updateSelectionData(changedMonth);
   };
 
   const handleAMonthDissmis = (value) => {
@@ -199,6 +204,7 @@ function App() {
         <Picker
           ref={pickAMonth}
           key={JSON.stringify(singleValue)}
+          age={ageIncrement}
           years={activeMonths}
           value={singleValue}
           lang={pickerLang.months}
@@ -211,16 +217,20 @@ function App() {
           />
         </Picker>
         <div className="tool-btns">
-		<a href="https://forms.gle/pqHsLggWwhFJK5Gq8" target="_blank" rel="noreferrer noopener">
-          <button
-            className="add-btn"
-            type="button"
-            //onClick={console.log("add button")}
+          <a
+            href="https://forms.gle/pqHsLggWwhFJK5Gq8"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={faPlus} className="tool-icon" />
-            Ajouter un son
-          </button>
-		 </a>
+            <button
+              className="add-btn"
+              type="button"
+              //onClick={console.log("add button")}
+            >
+              <FontAwesomeIcon icon={faPlus} className="tool-icon" />
+              Ajouter un son
+            </button>
+          </a>
         </div>
         <div className="chart-table-area">
           <table className="chart-table">
