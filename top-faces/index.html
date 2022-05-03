@@ -1,0 +1,479 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Top Kpop - Sorter</title>
+
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="src/js/scripts.js"></script>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Top Sorter</h1>
+      <ol id="sortable">
+        <li id="idol-sort-1">
+          <span class="idol">Arin - <span class="group">Oh My Girl</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-2">
+          <span class="idol">Bona - <span class="group">WJSN</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-3">
+          <span class="idol">Chaehyun - <span class="group">Kep1er</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-4">
+          <span class="idol"
+            >Chaewon - <span class="group">IZ*ONE, LE SSERAFIM</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-5">
+          <span class="idol"
+            >Chaeyoung - <span class="group">fromis_9</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-6">
+          <span class="idol">Chaeyoung - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-7">
+          <span class="idol">Cheng Xiao - <span class="group">WJSN</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-8">
+          <span class="idol">Choa - <span class="group">AOA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-9">
+          <span class="idol">Chungha - <span class="group">I.O.I</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-10">
+          <span class="idol">Chuu - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-11">
+          <span class="idol">Dahyun - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-12">
+          <span class="idol">Dajeong - <span class="group">PIXY</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-13">
+          <span class="idol">Dasom - <span class="group">Sistar</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-14">
+          <span class="idol"
+            >Do-A (ex Bella) - <span class="group">Alice (ex Elris)</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-15">
+          <span class="idol"
+            >Dosie - <span class="group">Purple Kiss</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-16">
+          <span class="idol">E:U - <span class="group">Everglow</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-17">
+          <span class="idol">Eunbin - <span class="group">CLC</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-18">
+          <span class="idol"
+            >Gahyeon - <span class="group">Dreamcatcher</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-19">
+          <span class="idol">Gyuri - <span class="group">fromis_9</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-20">
+          <span class="idol">Hani - <span class="group">EXID</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-21">
+          <span class="idol">Haseul - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-22">
+          <span class="idol">Hayoung - <span class="group">fromis_9</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-23">
+          <span class="idol">Heejin - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-24">
+          <span class="idol">Hyeri - <span class="group">Girl's Day</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-25">
+          <span class="idol">Hyewon - <span class="group">IZ*ONE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-26">
+          <span class="idol">Hyunjin - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-27">
+          <span class="idol">Irene - <span class="group">Red Velvet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-28">
+          <span class="idol">IU</span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-29">
+          <span class="idol">Jennie - <span class="group">Blackpink</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-30">
+          <span class="idol">Jihan - <span class="group">Weeekly</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-31">
+          <span class="idol">Jiho - <span class="group">Oh My Girl</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-32">
+          <span class="idol">Jihyo - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-33">
+          <span class="idol">Jisoo - <span class="group">Lovelyz</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-34">
+          <span class="idol">Jisoo - <span class="group">Blackpink</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-35">
+          <span class="idol">JiU - <span class="group">Dreamcatcher</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-36">
+          <span class="idol"
+            >Jiwon - <span class="group">Cherry Bullet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-37">
+          <span class="idol">Joy - <span class="group">Red Velvet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-38">
+          <span class="idol">Karina - <span class="group">aespa</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-39">
+          <span class="idol">Lisa - <span class="group">Blackpink</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-40">
+          <span class="idol">Luda - <span class="group">WJSN</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-41">
+          <span class="idol"
+            >May - <span class="group">Cherry Bullet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-42">
+          <span class="idol">Mijoo - <span class="group">Lovelyz</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-43">
+          <span class="idol">Mina - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-44">
+          <span class="idol">Minju - <span class="group">IZ*ONE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-45">
+          <span class="idol">Miyeon - <span class="group">(G)I-DLE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-46">
+          <span class="idol">Momo - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-47">
+          <span class="idol">Monday - <span class="group">Weeekly</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-48">
+          <span class="idol">Nakyung - <span class="group">fromis_9</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-49">
+          <span class="idol"
+            >Nana -
+            <span class="group">After School, Orange Caramel</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-50">
+          <span class="idol">Nancy - <span class="group">Momoland</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-51">
+          <span class="idol">Nayeon - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-52">
+          <span class="idol"
+            >Nayoung - <span class="group">I.O.I, Pristin</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-53">
+          <span class="idol">Ningning - <span class="group">aespa</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-54">
+          <span class="idol">Olivia Hye - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-55">
+          <span class="idol">Onda - <span class="group">Everglow</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-56">
+          <span class="idol">Rei - <span class="group">IVE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-57">
+          <span class="idol">Rosé - <span class="group">Blackpink</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-58">
+          <span class="idol">Ryujin - <span class="group">ITZY</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-59">
+          <span class="idol">Saerom - <span class="group">fromis_9</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-60">
+          <span class="idol"
+            >Sakura - <span class="group">IZ*ONE, LE SSERAFIM</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-61">
+          <span class="idol">Sana - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-62">
+          <span class="idol">Seeun - <span class="group">STAYC</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-63">
+          <span class="idol"
+            >Sejeong - <span class="group">I.O.I, Gugudan</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-64">
+          <span class="idol">Seolhyun - <span class="group">AOA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-65">
+          <span class="idol"
+            >Seulgi - <span class="group">Red Velvet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-66">
+          <span class="idol">Shuhua - <span class="group">(G)I-DLE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-67">
+          <span class="idol">Sihyeon - <span class="group">Everglow</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-68">
+          <span class="idol">Soeun - <span class="group">Weeekly</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-69">
+          <span class="idol"
+            >Sohee - <span class="group">Alice (ex Elris)</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-70">
+          <span class="idol">Somi - <span class="group">I.O.I</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-71">
+          <span class="idol">Soojin - <span class="group">(G)I-DLE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-72">
+          <span class="idol">Sowon - <span class="group">GFriend</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-73">
+          <span class="idol">Sumin - <span class="group">STAYC</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-74">
+          <span class="idol"
+            >Sunmi - <span class="group">Wonder Girls</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-75">
+          <span class="idol"
+            >Suyun - <span class="group">Rocket Punch</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-76">
+          <span class="idol">Suzy - <span class="group">Miss A</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-77">
+          <span class="idol">Taeyeon - <span class="group">SNSD</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-78">
+          <span class="idol">Tiffany - <span class="group">SNSD</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-79">
+          <span class="idol">Tzuyu - <span class="group">Twice</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-80">
+          <span class="idol">Wendy - <span class="group">Red Velvet</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-81">
+          <span class="idol"
+            >Wonyoung - <span class="group">IZ*ONE, IVE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-82">
+          <span class="idol">Xiaoting - <span class="group">Kep1er</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-83">
+          <span class="idol">Yebin - <span class="group">DIA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-84">
+          <span class="idol">Yeeun - <span class="group">CLC</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-85">
+          <span class="idol">Yeji - <span class="group">ITZY</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-86">
+          <span class="idol">Yena - <span class="group">IZ*ONE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-87">
+          <span class="idol">Yeojin - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-88">
+          <span class="idol"
+            >Yeonhee - <span class="group">Rocket Punch</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-89">
+          <span class="idol">Yeonwoo - <span class="group">Momoland</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-90">
+          <span class="idol">Yiren - <span class="group">Everglow</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-91">
+          <span class="idol">YooA - <span class="group">Oh My Girl</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-92">
+          <span class="idol"
+            >Yoohyeon - <span class="group">Dreamcatcher</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-93">
+          <span class="idol">Yoon - <span class="group">STAYC</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-94">
+          <span class="idol"
+            >Yubin (ex Binnie) - <span class="group">Oh My Girl</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-95">
+          <span class="idol"
+            >Yujin - <span class="group">IZ*ONE, IVE</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-96">
+          <span class="idol"
+            >Yukyung - <span class="group">Alice (ex Elris)</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-97">
+          <span class="idol">Yuna - <span class="group">ITZY</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-98">
+          <span class="idol"
+            >Yunkyoung - <span class="group">Rocket Punch</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-99">
+          <span class="idol">Yves - <span class="group">LOONA</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+        <li id="idol-sort-100">
+          <span class="idol">Zoa - <span class="group">Weeekly</span></span
+          ><img class="img-drag" src="src/assets/draggable.png" />
+        </li>
+      </ol>
+      <form
+        name="gform"
+        id="gform"
+        enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeSH1zic6WNJ5prtCdTr5qjAMP6XG9JeR0UdP1cad9w0rLlzg/formResponse?"
+        target="hidden_iframe"
+        onsubmit="submitted=true;"
+      >
+        <div id="submit">
+          <input
+            type="text"
+            name="entry.607569736"
+            id="entry.607569736"
+            class="submit-pseudo"
+            placeholder="Entrer pseudo"
+            onkeyup="checkform()"
+          />
+          <input
+            id="entry.2125079511"
+            name="entry.2125079511"
+            class="submit-hidden"
+            type="hidden"
+            value=""
+          />
+          <input id="btn-submit" type="submit" value="Envoyer" disab />
+        </div>
+      </form>
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted) {}"
+      ></iframe>
+    </div>
+  </body>
+</html>
