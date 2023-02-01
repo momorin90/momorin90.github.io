@@ -25,7 +25,7 @@ const storage = getStorage(app);
 const INIT_VALUE = { year: 2022, month: 1 };
 const INIT_ACTIVE_VALUES = {
   min: { year: 2022, month: 1 },
-  max: { year: 2022, month: 1 },
+  max: { year: 2023, month: 1 },
 };
 
 const MonthBox = (props) => {
