@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#result-table thead tr th {
+  padding: 10px 0;
+  font-weight: 600;
+  color: #fdd271;
+}
+#result-table tbody tr {
+  border-bottom: 1px solid #fdd271;
+}
+#result-table tbody tr td {
+  padding: 10px 0;
+}
+
+#participant-table tbody tr {
+  border-bottom: 1px solid #fdd271;
+}
+#participant-table tbody tr td {
+  padding: 15px 0;
+}
+
+.scrolldown {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  height: 46px;
+  text-align: center;
+  width: 25px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+  animation-duration: 1.5s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #ffffff;
+}
+
+.scrolldown-p2 {
+  animation-delay: 0.75s;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
+}
+
+@media (max-width: 575px) {
+  #result-table tbody tr td {
+    padding: 7px 0;
+  }
+}
