@@ -138,6 +138,10 @@
   text-overflow: ellipsis;
 }
 
+.chart-table .pseudo-melon {
+  color: #665be8;
+}
+
 .chart-table .title-cell {
   display: flex;
   flex-direction: row;

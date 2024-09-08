@@ -244,9 +244,15 @@ function App() {
             </thead>
             <tbody>
               {selectionData.map((cell) => {
+                const isMelon = cell.pseudo === "Melon";
+                const pseudo = isMelon ? "Melon Charts" : cell.pseudo;
                 return (
                   <tr key={cell.id}>
-                    <td className="pseudo-cell">{cell.pseudo}</td>
+                    <td
+                      className={`pseudo-cell ${isMelon ? "pseudo-melon" : ""}`}
+                    >
+                      {pseudo}
+                    </td>
                     <td>
                       <div className="title-cell">
                         <img
